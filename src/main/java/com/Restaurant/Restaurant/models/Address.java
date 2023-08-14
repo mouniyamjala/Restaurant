@@ -5,9 +5,20 @@ public class Address {
     private String addressLine1;
     private String addressLine2;
     private String city;
+
     private String state;
-    private String Country;
+    private String country;
     private String zipCode;
+
+    public Address(String houseNo, String addressLine1, String addressLine2, String city, String state, String country, String zipCode) {
+        this.houseNo = houseNo;
+        this.addressLine1 = addressLine1;
+        this.addressLine2 = addressLine2;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.zipCode = zipCode;
+    }
 
     public String getHouseNo() {
         return houseNo;
@@ -49,12 +60,12 @@ public class Address {
         this.state = state;
     }
 
-    public String getCountry() {
-        return Country;
+    public String getcountry() {
+        return country;
     }
 
     public void setCountry(String country) {
-        Country = country;
+        this.country = country;
     }
 
     public String getZipCode() {

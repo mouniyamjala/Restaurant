@@ -4,6 +4,12 @@ public class Restaurant {
     private int restaurantId;
     private String restaurantName;
 
+    public Restaurant(int restaurantId, String restaurantName, Address restaurantAddress) {
+        this.restaurantId = restaurantId;
+        this.restaurantName = restaurantName;
+        this.restaurantAddress = restaurantAddress;
+    }
+
     public int getRestaurantId() {
         return restaurantId;
     }
